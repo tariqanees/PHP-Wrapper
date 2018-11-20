@@ -55,7 +55,7 @@ $newUser = $client->createUser($baseDoc);
 $allClientsTrans = $client->getAllClientTransactions([options]);
 ```
 
-#### Retrieve All Nodes
+#### Retrieve All Plaform Nodes
 
 ```php
   options = {
@@ -63,7 +63,7 @@ $allClientsTrans = $client->getAllClientTransactions([options]);
     "per_page" => 1,
     "type" => ACH-US
   }
-    $allNodes = $client->getAllNodes( $userObj, [options] );
+    $allNodes = $client->getAllPlatformNodes([options] );
 ```
 
 
@@ -113,6 +113,6 @@ $allClientsTrans = $client->getAllClientTransactions([options]);
   'url' => 'https://requestb.in/zp216zzp'
   ];
   
-   $updateSubscriptionObj = $client->updateSubscription( $subscriptionObj, $body );
+   $updateSubscriptionObj = $client->updateSubscription( $subscriptionID, $body );
     
 ```
