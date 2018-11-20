@@ -55,15 +55,6 @@ $newUser = $client->createUser($baseDoc);
 $allClientsTrans = $client->getAllClientTransactions([options]);
 ```
 
-#### retrieve All User Transactions
-```php
-options = {
-    "page" => 1,
-    "per_page" => 1
-}
-    $allUserTrans = $client->getAllUserTransactions( $userObj, [options] );
-```
-
 #### Retrieve All Nodes
 
 ```php
